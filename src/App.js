@@ -1,11 +1,15 @@
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import { Home } from "./pages/Home";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <p className='text-red-500 hover:text-yellow-600 dark:bg-black'>Hi there</p>
-      <h1 className='font-semibold border w-fit h-5 first-letter: caption-bottom'>You there</h1>
-
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
     </div>
   );
 }
