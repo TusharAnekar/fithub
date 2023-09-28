@@ -13,16 +13,21 @@ const Home = () => {
           backgroundSize: "cover",
         }}
       ></div>
-      <div className="hidden md:block" style={{
+      <div
+        className="hidden md:block"
+        style={{
           width: "100vw",
           height: "100vh",
           backgroundImage:
             "url('https://res.cloudinary.com/diuf6w2yi/image/upload/f_auto,q_auto/v1/FitHub/mmayvst57avahrfa4vmd')",
           backgroundSize: "cover",
-        }}></div>
+        }}
+      ></div>
       <NavLink
         to={"/dashboard"}
-        className={"fixed bottom-10 left-10 bg-primary p-4 rounded-lg transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"}
+        className={
+          "fixed bottom-10 left-10 transform rounded-lg bg-primary p-4 transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+        }
       >
         Start FitHub Journey Now!
       </NavLink>

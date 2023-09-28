@@ -10,7 +10,10 @@ const Header = () => {
   };
   return (
     <header className="sticky top-0 bg-primary p-4 flex justify-between">
-      <NavLink to={"/"} className="font-semibold text-xl md:text-2xl lg:text-3xl">
+      <NavLink
+        to={"/"}
+        className="font-semibold text-xl md:text-2xl lg:text-3xl"
+      >
         FitHub
       </NavLink>
       <div className="">
@@ -34,10 +37,18 @@ const Header = () => {
             !isOpenMenu && "max-md:hidden"
           }`}
         >
-          <NavLink to={"/dashboard"} className={"md:text-lg"}>Dashboard</NavLink>
-          <NavLink to={"/exercise-tracker"} className={"md:text-lg"}>Exercise Tracker</NavLink>
-          <NavLink to={"/food-tracker"} className={"md:text-lg"}>Food Tracker</NavLink>
-          <NavLink to={"/goal-tracker"} className={"md:text-lg"}>Goal Tracker</NavLink>
+          <NavLink to={"/dashboard"} className={"md:text-lg"}>
+            Dashboard
+          </NavLink>
+          <NavLink to={"/exercise-tracker"} className={"md:text-lg"}>
+            Exercise Tracker
+          </NavLink>
+          <NavLink to={"/food-tracker"} className={"md:text-lg"}>
+            Food Tracker
+          </NavLink>
+          <NavLink to={"/goal-tracker"} className={"md:text-lg"}>
+            Goal Tracker
+          </NavLink>
         </nav>
       </div>
     </header>
